@@ -274,7 +274,7 @@ if(isset($_POST['name'])) {
 											<a href="blog.html">Blog <span class="badge bg-primary">PRO</span></a>
 										</li>
 										<li>
-											<a href="portfolio-masonry.html">Portfolio Masonry <span
+											<a href="portfolio.html">Portfolio <span
 													class="badge bg-primary">PRO</span></a>
 										</li>
 										<li>
