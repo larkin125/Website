@@ -1,10 +1,46 @@
 <!-- TEXT TO SEARCH FOR BLOG POSTING 
 
-REMEMBER TO ADD POSTS FROM HERE AFTER SINGLE POSTS. INCLUDE PICTURE, TITLE, TEXT, 
-  TAG AND DATE THEN ADD POST TO READ MORE
+#folder - Tag
+#clock - date
+BLOG_TITLE_HERE - Blog title
+img-fluid my-4 - Blog Main Image Location
+post-description - Content
 
 
--->
+
+block-tag class - Tags to add
+(TAG_A, TAG_B, TAG_C)
+
+## CURRENT TAGS
+- Life Update
+- Writing
+- Novel
+- Fera World
+- Void Apostasy
+- Citadel of Darkness
+- Faithless
+
+EXAMPLES OF THINGS TO ADD TO BLOG POSTS:
+
+## FLOATING IMAGES
+		<figure class="d-flex float-end m-md-5">
+											<img src="images/team-member-7.jpg" width="300" alt="post-image"
+												class="img-fluid mb-4">
+										</figure>
+
+## BLOCKQUTE
+		<blockquote>TEXTHERE</blockquote>
+
+## LISTS
+<ul class="inner-list">
+	<li>Blandit mauris libero condimentum commodo sociis convallis sit.</li>
+	<li>Magna diam amet justo sed vel dolor et volutpat integer.</li>
+	<li>Laculis sit sapien hac odio elementum egestas neque.</li>
+</ul>
+
+
+		-->
+
 
 
 <!DOCTYPE html>
@@ -172,20 +208,18 @@ REMEMBER TO ADD POSTS FROM HERE AFTER SINGLE POSTS. INCLUDE PICTURE, TITLE, TEXT
   <div class="nav nav-overlay">
     <div class="nav__content">
       <ul class="nav__list">
-        <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
+        <li class="nav__list-item"><a href="index.html" class="hover-target">Home</a></li>
         <li class="nav__list-item"><a href="portfolio.html" class="hover-target">Portfolio</a></li>
         <li class="nav__list-item"><a href="https://larkin125.github.io/Wiki.github.io/main-menu.html" class="hover-target">WIKI</a></li>
 		<li class="nav__list-item active-nav"><a href="blog.html" class="hover-target">Blog</a></li>
 		
         
-
-    <!--	  Remember to remove the Pro Span
-		<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact me</a></li>
-        <li class="nav__list-item"><a href="contact.html" class="hover-target">Contact me</a><span class="badge bg-primary">PRO</span></li>
-        <li class="nav__list-item"><a href="blog.html" class="hover-target">Blog</a><span class="badge bg-primary">PRO</span></li>
-				<li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a><span class="badge bg-primary">PRO</span></li>
-				<li class="nav__list-item"><a href="single-portfolio.html" class="hover-target">Single Portfolio</a><span class="badge bg-primary">PRO</span></li>
-				<li class="nav__list-item"><a href="team.html" class="hover-target">Our Team</a><span class="badge bg-primary">PRO</span></li>
+		
+		<!--	  Remember to remove the Pro Span
+		<li class="nav__list-item"><a href="contact.html" class="hover-target">Contact me</a></li>        
+        <li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a><span class="badge bg-primary">PRO</span></li>
+		<li class="nav__list-item"><a href="single-portfolio.html" class="hover-target">Single Portfolio</a><span class="badge bg-primary">PRO</span></li>
+		<li class="nav__list-item"><a href="team.html" class="hover-target">Our Team</a><span class="badge bg-primary">PRO</span></li>
         <li class="nav__list-item"><a href="styles.html" class="hover-target">Styles</a><span class="badge bg-primary">PRO</span></li>
 -->
 
@@ -200,7 +234,7 @@ REMEMBER TO ADD POSTS FROM HERE AFTER SINGLE POSTS. INCLUDE PICTURE, TITLE, TEXT
 		</label>
 	</nav>
 
- <div class="container-fluid p-0">
+	 <div class="container-fluid p-0">
     <div class="row g-0">
       <!-- Sidebar -->
       <div class="col-lg-3 position-fixed z-1 h-100" data-aos="slide-right" data-aos-delay="200">
@@ -260,77 +294,351 @@ REMEMBER TO ADD POSTS FROM HERE AFTER SINGLE POSTS. INCLUDE PICTURE, TITLE, TEXT
 
 			<main class="col-lg-9 offset-lg-3">
 				<div class="container">
-					<div class="justify-content-center p-1 m-1 p-md-5 m-md-5">
+					<div class="row justify-content-center">
+						<div class="col-lg-9">
 
-						<div class="row">
-							<div class="col-lg-6 mt-5 pt-5" data-aos="fade-up">
-								<div class="section-header">
-									<span class="introduction mb-3 d-block">Recent Posts</span>
-									<h1 class="name mb-4 txt-fx slide-up text-uppercase">My Blog</h1>
+							<section class="pt-5 mt-5" data-aos="fade-up">
+								<div class="post-meta d-flex gap-3 my-4">
+									<span class="post-category">
+										<svg width="16" height="16" viewBox="0 0 24 24">
+											<use xlink:href="#folder"></use>
+										</svg>
+										Business </span>
+									<span class="meta-day">
+										<svg width="16" height="16" viewBox="0 0 24 24">
+											<use xlink:href="#clock"></use>
+										</svg>12-03-2021 </span>
+								</div>
+								<h1 class="name mb-4 txt-fx slide-up text-uppercase">BLOG_TITLE_HERE</h1>
+								<img src="images/single-post-image.jpg" alt="single post" class="img-fluid my-4">
+							</section>
+
+							<article class="post-item" data-aos="fade-up" data-aos-delay="100">
+
+								<div class="post-content py-5">
+									<div class="post-description">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+											facilisis
+											vivamus massa magna. Blandit mauris libero condimentum commodo morbi
+											consectetur
+											sociis convallis sit. Magna diam amet justo sed vel dolor et volutpat
+											integer.
+											Iaculis sit sapien hac odio elementum egestas neque. Adipiscing purus
+											euismod
+											orci sem amet, et. Turpis erat ornare nisi laoreet est euismod.</p>
+
+
+											<div class="post-bottom-link d-flex flex-wrap justify-content-between">
+											<div class="block-tag">
+												<ul class="list-unstyled d-flex flex-wrap gap-2">
+													<li>
+														<a href="#" class="btn btn-light">TAG_A</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-light">TAG_B</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-light">TAG_C</a>
+													</li>
+												</ul>
+											</div>
+										<!-- 	TURN OFF SHARE FUNCTION FOR NOW
+											<div class="block-social-links d-flex flex-wrap align-items-baseline">
+												<div class="element-title text-uppercase">Share:</div>
+												<ul class="list-unstyled d-flex gap-2">
+													<li>
+														<a href="#" class="btn btn-light">Facebook</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-light">Twitter</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-light">Pinterest</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-light">Youtube</a>
+													</li>
+												</ul>
+											</div> -->
+										</div>
+									</div>
+									<!-- TURN OFF PREVIOUS AND NEXT POST FOR NOW
+									<div id="single-post-navigation" class="mt-5">
+										<div class="post-navigation d-flex justify-content-between">
+											<a itemprop="url" class="post-prev text-decoration-none" href="#">
+												<span class="text-muted">Previous</span>
+												<h2 class="page-nav-title">Top 10 fashion trend for summer</h2>
+											</a>
+											<a itemprop="url" class="post-next text-end text-decoration-none" href="#">
+												<span class="text-muted">Next</span>
+												<h2 class="page-nav-title">Crazy fashion with unique moment</h2>
+											</a>
+										</div>
+									</div> -->
+								</div>
+							</article>
+
+							<div id="post-author-info" class="border-top border-bottom py-4">
+								<div class="row d-flex align-items-center">
+									<div class="col-lg-3">
+										<div class="image-holder">
+											<a itemprop="url" href="#">
+												<img src="images/AuthorImage/Ye8JAr7L.jpg" class="img-fluid rounded-circle"
+													alt="author">
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-9">
+										<div class="post-author-content">
+											<div class="element-title d-flex align-items-center gap-3">
+												<h4><a itemprop="url" href="#" class="text-decoration-none">Lewis Stockton
+														</a></h4>
+												<span class="author-position"><em>Writer</em></span>
+											</div>
+											<p>A nerd from birth, lewis has always had a love of science fiction and fantasy from books and shows such as Lord of the Rings, 
+												Battlestar Galactica, Serenity and all through the Warhammer 40k universe; he has always loved the fantastical and the far reaching.</p>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-lg-6 mt-5 pt-5 d-flex align-items-center" data-aos="fade-up">
-								<p>Welcome to the Blog of Lewis Stockton.</p>
-							</div>
-						</div>
 
-						<div class="row">
-							<div class="col-lg-6">
-								<article class="post-item pb-5" data-aos="fade-up">
-									<div class="post-meta d-flex gap-3 my-4">
-										<span class="post-category">
-											<svg width="16" height="16" viewBox="0 0 24 24">
-												<use xlink:href="#folder"></use>
-											</svg>
-											Life Update </span>
-										<span class="meta-day">
-											<svg width="16" height="16" viewBox="0 0 24 24">
-												<use xlink:href="#clock"></use>
-											</svg>2025-08-30 </span>
+<!-- TURN OFF COMMENTS FOR NOW
+														<section id="post-comment" class="mt-5">
+								<div class="container">
+									<div class="row">
+										<div class="comments-wrap">
+											<h3 class="my-3">
+												<span class="count">3</span> Comments
+											</h3>
+											<div class="comment-list">
+												<article class="comment-item py-3 row border-bottom">
+													<div class="col-lg-2">
+														<img src="images/commentor-item1.jpg" alt="default"
+															class="commentor-image rounded-circle img-fluid">
+													</div>
+													<div class="col-lg-10">
+														<div class="author-post">
+															<div class="comment-meta d-flex gap-3">
+																<h5 class="author-name">Lufy carlson</h5>
+																<span class="meta-date">Jul 10</span>
+															</div>
+															<p>Tristique tempis condimentum diam done ullancomroer sit
+																element henddg sit he consequert.Tristique tempis
+																condimentum diam done ullancomroer sit element henddg
+																sit he
+																consequert.</p>
+															<div class="comments-reply">
+																<a href="#">Reply</a>
+															</div>
+														</div>
+														<article class="comment-item pb-3 row child-comments">
+															<div class="col-lg-2">
+																<img src="images/commentor-item2.jpg" alt="default"
+																	class="commentor-image rounded-circle img-fluid">
+															</div>
+															<div class="col-lg-10">
+																<div class="author-post">
+																	<div class="comment-meta d-flex gap-3">
+																		<h5 class="author-name">Lora leigh</h5>
+																		<span class="meta-date">Jul 10</span>
+																	</div>
+																	<p>Tristique tempis condimentum diam done
+																		ullancomroer
+																		sit element henddg sit he consequert.Tristique
+																		tempis condimentum diam done ullancomroer sit
+																		element henddg sit he consequert.</p>
+																	<div class="comments-reply">
+																		<a href="#">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</article>
+														<article class="comment-item pb-3 row child-comments">
+															<div class="col-lg-2">
+																<img src="images/commentor-item3.jpg" alt="default"
+																	class="commentor-image rounded-circle img-fluid">
+															</div>
+															<div class="col-lg-10">
+																<div class="author-post">
+																	<div class="comment-meta d-flex gap-3">
+																		<h5 class="author-name">Natalie dormer</h5>
+																		<span class="meta-date">Jul 10</span>
+																	</div>
+																	<p>Tristique tempis condimentum diam done
+																		ullancomroer
+																		sit element henddg sit he consequert.Tristique
+																		tempis condimentum diam done ullancomroer sit
+																		element henddg sit he consequert.</p>
+																	<div class="comments-reply">
+																		<a href="#">Reply</a>
+																	</div>
+																</div>
+															</div>
+														</article>
+													</div>
+												</article>
+												<article class="comment-item py-3 row border-bottom">
+													<div class="col-lg-2">
+														<img src="images/commentor-item2.jpg" alt="default"
+															class="commentor-image rounded-circle img-fluid">
+													</div>
+													<div class="col-lg-10">
+														<div class="author-post">
+															<div class="comment-meta d-flex gap-3">
+																<h5 class="author-name">Lora leigh</h5>
+																<span class="meta-date">Jul 10</span>
+															</div>
+															<p>Tristique tempis condimentum diam done ullancomroer sit
+																element henddg sit he consequert.Tristique tempis
+																condimentum diam done ullancomroer sit element henddg
+																sit he
+																consequert.</p>
+															<div class="comments-reply">
+																<a href="#">Reply</a>
+															</div>
+														</div>
+													</div>
+												</article>
+												<article class="comment-item py-3 row">
+													<div class="col-lg-2">
+														<img src="images/commentor-item3.jpg" alt="default"
+															class="commentor-image rounded-circle img-fluid">
+													</div>
+													<div class="col-lg-10">
+														<div class="author-post">
+															<div class="comment-meta d-flex gap-3">
+																<h5 class="author-name">Natalie dormer</h5>
+																<span class="meta-date">Jul 10</span>
+															</div>
+															<p>Tristique tempis condimentum diam done ullancomroer sit
+																element henddg sit he consequert.Tristique tempis
+																condimentum diam done ullancomroer sit element henddg
+																sit he
+																consequert.</p>
+															<div class="comments-reply">
+																<a href="#">Reply</a>
+															</div>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="comment-respond mt-5">
+											<h3>Leave a Comment</h3>
+											<p>Your email address will not be published. Required fields are marked *
+											</p>
+											<form method="post" class="form-group padding-small">
+												<div class="row">
+													<div class="col-lg-12 mb-3">
+														<textarea class="form-control ps-3 pt-3" id="comment"
+															name="comment"
+															placeholder="Write your comment here *"></textarea>
+													</div>
+													<div class="col-lg-6 mb-3">
+														<input class="form-control ps-3" type="text" name="author"
+															id="author" placeholder="Write your full name here *">
+													</div>
+													<div class="col-lg-6">
+														<input class="form-control ps-3" type="email" name="email"
+															id="email" placeholder="Write your e-mail address *">
+													</div>
+													<div class="col-lg-12">
+														<label class="d-flex align-items-center">
+															<input type="checkbox" class="checked-box me-2">
+															<span class="label-body">Save my name, email, and website in
+																this browser for the next time.</span>
+														</label>
+													</div>
+													<div class="col-lg-12 mt-3">
+														<button
+															class="btn btn-lg btn-primary text-uppercase btn-rounded-none w-100"
+															type="submit">Post Comment</button>
+													</div>
+												</div>
+											</form>
+										</div>
 									</div>
-									<div class="post-image">
-										<img src="images/BlogPostImages/IlmarianImperiumBanner.png" alt="image" class="post-grid-image img-fluid">
-									</div>
-									<div class="post-content">
-										<h3 class="post-title my-4">
-											<a href="Blog_20250830-001.html" class="text-decoration-none">Welcome Home Again...</a>
-										</h3>
-										<p>Well well well.</p>
-										<p>Look what we have here!</p>
-										<p>A new blog and a new post!</p>
-									</div>
-									<a href="Blog_20250830-001.html" class="text-decoration-underline">Read More</a>
-								</article>
-							</div>
-							
-						</div>
-<!-- REMOVE PAGES FOR NOW. NOT ENOUGH PAGES
-						<div class="row">
-							<nav aria-label="Page navigation" class="d-flex justify-content-center mt-5">
-								<ul class="pagination">
-									<li class="page-item">
-										<a class="page-link" href="#" aria-label="Previous">
-											<i class="icon icon-arrow-left"></i>
-										</a>
-									</li>
-									<li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
-									</li>
-									<li class="page-item"><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item"><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" href="#">5</a></li>
-									<li class="page-item">
-										<a class="page-link" href="#" aria-label="Next">
-											<i class="icon icon-arrow-right"></i>
-										</a>
-									</li>
-								</ul>
-							</nav>
-						</div>
+								</div>
+							</section>
  -->
+
+ 
+  <!--section-header-->
+							<!-- <div class="section-header mt-5">
+								<h2 class="section-title">Related Posts</h2>
+							</div> -->
+<!-- TURN OFF RELATED POSTS FOR NOW -->
+<!--							<div class="row">
+								<div class="col-lg-6">
+									<article class="post-item pb-5">
+										<div class="post-meta d-flex gap-3 my-4">
+											<span class="post-category">
+												<svg width="16" height="16" viewBox="0 0 24 24">
+													<use xlink:href="#folder"></use>
+												</svg>
+												Business </span>
+											<span class="meta-day">
+												<svg width="16" height="16" viewBox="0 0 24 24">
+													<use xlink:href="#clock"></use>
+												</svg>12-03-2021 </span>
+										</div>
+										<div class="post-image">
+											<img src="images/post-image1.jpg" alt="image"
+												class="post-grid-image img-fluid">
+										</div>
+										<div class="post-content">
+											<h3 class="post-title my-4">
+												<a href="single-post.html" class="text-decoration-none">Best rules to
+													follow for achieving business
+													goals</a>
+											</h3>
+											<p>Business migration into the cloud has been one of the most boggling
+												innovations of the last
+												decade. Cloud computing has revolutionized the world of information
+												technology.</p>
+										</div>
+										<a href="single-post.html" class="text-decoration-underline">Read More</a>
+									</article>
+								</div>
+								<div class="col-lg-6">
+									<article class="post-item pb-5">
+										<div class="post-meta d-flex gap-3 my-4">
+											<span class="post-category">
+												<svg width="16" height="16" viewBox="0 0 24 24">
+													<use xlink:href="#folder"></use>
+												</svg>
+												Business </span>
+											<span class="meta-day">
+												<svg width="16" height="16" viewBox="0 0 24 24">
+													<use xlink:href="#clock"></use>
+												</svg>12-03-2021 </span>
+										</div>
+										<div class="post-image">
+											<img src="images/post-image2.jpg" alt="image"
+												class="post-grid-image img-fluid">
+										</div>
+										<div class="post-content">
+											<h3 class="post-title my-4">
+												<a href="single-post.html" class="text-decoration-none">6 Ways to
+													Improve Your Emotional Health And
+													Maintain A Balanced
+													Life</a>
+											</h3>
+											<p>Business migration into the cloud has been one of the most boggling
+												innovations of the last
+												decade. Cloud computing has revolutionized the world of information
+												technology.</p>
+										</div>
+										<a href="single-post.html" class="text-decoration-underline">Read More</a>
+									</article>
+								</div>
+							</div>
+ -->
+						</div>
 					</div>
 				</div>
 			</main>
+
 		</div>
 	</div>
 
