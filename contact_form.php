@@ -1,9 +1,9 @@
 <?php
 	// Edit these lines
-	$your_name = "Lewis Stockton";
-	$your_email = "LewisStocktonNovelist@gmail.com";
+	$your_name = "Your Name";
+	$your_email = "mail@domain.com";
 	//Subject Field
-	$mail_subject = "You have a message sent from LewisStockton.com";
+	$mail_subject = "You have a message sent from your site";
 ?>
 
 <?php
